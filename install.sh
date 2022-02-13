@@ -2,7 +2,7 @@
 
 set -euxo pipefail
 
-SCRIPT_DIR=$(dirname "$(readlink -f "$0")")
-
-go install github.com/sourcegraph/zoekt/cmd/zoekt-webserver@master
-go install github.com/sourcegraph/zoekt/cmd/zoekt-index@master
+go install github.com/google/zoekt/cmd/zoekt-webserver@latest
+go install github.com/google/zoekt/cmd/zoekt-index@latest
+go install github.com/google/zoekt/cmd/zoekt@latest
+go install github.com/google/zoekt/cmd/zoekt-indexserver@latest
